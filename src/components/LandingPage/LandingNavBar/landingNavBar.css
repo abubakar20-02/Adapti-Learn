@@ -1,0 +1,60 @@
+.Logo {
+    position: absolute;
+    left: -20px;
+    top: -40px;
+
+    width: 150px;
+}
+
+.landing-navbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 30px; /* Adjust padding as needed */
+    margin-bottom: 30px;
+}
+
+.navBarCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    flex-grow: 1; /* Makes the navBarCenter grow to fill available space */
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    right: 30px;
+}
+
+/* landingNavBar.css */
+@media (min-width: 768px) {
+    .MuiIconButton-root {
+      display: none;  /* Hide hamburger menu on larger screens */
+    }
+  }
+  .navBarCenter, .buttonContainer {
+    display: none; /* Initially hidden on mobile, shown on larger screens */
+  
+    @media (min-width: 768px) {
+      display: flex; /* Flex display on larger screens */
+    }
+  }
+
+  @media (max-width: 767px) { /* Targeting mobile screens specifically */
+    .navBarCenter, .buttonContainer {
+        display: none; /* Hide non-essential items */
+    }
+
+
+    .landing-navbar {
+        justify-content: flex-end; /* Aligns everything to the right on smaller screens */
+    }
+}
+  
+

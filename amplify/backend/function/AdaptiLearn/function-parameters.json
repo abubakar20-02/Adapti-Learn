@@ -1,0 +1,22 @@
+{
+  "lambdaLayers": [
+    {
+      "type": "ExternalLayer",
+      "arn": "arn:aws:lambda:eu-north-1:339712978800:layer:OpenAI38:1"
+    }
+  ],
+  "permissions": {
+    "api": {
+      "adaptilearn": [
+        "Query",
+        "Mutation"
+      ]
+    }
+  },
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "openAiapiKey",
+      "environmentVariableName": "openAIAPIKey"
+    }
+  ]
+}

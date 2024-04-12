@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
+import LandingPage from './components/LandingPage/LandingPage';
+import HomePage from './components/HomePage/HomePage';
+import About from './components/About';
+import ContactUs from './components/ContactUsPage/ContactUs';
+import LandingNavBar from './components/LandingPage/LandingNavBar/navbar';
+import Footer from './components/Footer/footer';
 
 function App() {
+  const location = useLocation();
+
+  const shouldRenderNavBarAndFooter = !['/homepage'].includes(location.pathname);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='maincontainer'>
+      {shouldRenderNavBarAndFooter && <LandingNavBar />}
+      <Routes>
+        <Route path='*' element={<LandingPage />} />
+        <Route path="/" element={<LandingPage/>} />
+        <Route path="/homepage" element={<HomePage/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+      {shouldRenderNavBarAndFooter && <Footer />}
     </div>
   );
 }
-
+ 
 export default App;

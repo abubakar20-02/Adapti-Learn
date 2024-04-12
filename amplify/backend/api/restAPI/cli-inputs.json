@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "paths": {
+    "/test": {
+      "name": "/test",
+      "lambdaFunction": "AdaptiLearn",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/generateQuestion": {
+      "name": "/generateQuestion",
+      "lambdaFunction": "AdaptiLearn",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/getQuestions": {
+      "name": "/getQuestions",
+      "lambdaFunction": "AdaptiLearn",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}

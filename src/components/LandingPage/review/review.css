@@ -1,0 +1,39 @@
+:root {
+    --img-width:  50px;
+  }  
+.reviewContainer{
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.reviewText{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.reviewer-Img{
+    border-radius: 50%;
+    width: var(--img-width);
+    height: var(--img-width);
+}
+
+.reviewer-Name{
+    font-weight: 600;
+}
+
+.reviewer-Title{
+    font-weight: 300;
+}
+
+.reviewerContainer{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

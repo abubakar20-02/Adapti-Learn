@@ -1,0 +1,23 @@
+.faq{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+}  
+
+.faq-Container{
+    padding-top: 5px;
+    width: 100%;
+}
+
+.faq-Title{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.faq-Context{
+    font-weight: 300;
+}

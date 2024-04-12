@@ -1,0 +1,20 @@
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.contact-us-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.world-map {
+    width: 100%;  /* Ensures the SVG fills the container horizontally */
+    height: auto;  /* Maintains the aspect ratio */
+    max-width: 100%; /* Optional, ensures the image does not overflow its container */
+}

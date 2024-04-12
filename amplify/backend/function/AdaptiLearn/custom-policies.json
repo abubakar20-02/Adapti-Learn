@@ -1,0 +1,12 @@
+[
+  {
+    "Action": ["dynamodb:GetItem","dynamodb:UpdateItem"],
+    "Resource": ["arn:aws:dynamodb:eu-north-1:339712978800:table/questionIndex"]
+  },
+  {
+    "Action": [
+      "dynamodb:BatchGetItem"
+    ],
+    "Resource": ["arn:aws:dynamodb:eu-north-1:339712978800:table/Question-dnq2vqnyiffxfeewwwf253tad4-staging"]
+  }
+]
