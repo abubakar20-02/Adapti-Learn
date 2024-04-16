@@ -17,7 +17,7 @@
       "function": {
         "AdaptiLearn": {
           "deploymentBucketName": "amplify-amplify1879b9676aeb4-staging-b2c71-deployment",
-          "s3Key": "amplify-builds/AdaptiLearn-6a4a706c45564347304b-build.zip",
+          "s3Key": "amplify-builds/AdaptiLearn-36766b764f6a714a6849-build.zip",
           "openAiapiKey": "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"
         },
         "authPostConfirmation": {

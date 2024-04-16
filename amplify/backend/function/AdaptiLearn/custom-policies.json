@@ -1,7 +1,7 @@
 [
   {
     "Action": ["dynamodb:GetItem","dynamodb:UpdateItem"],
-    "Resource": ["arn:aws:dynamodb:eu-north-1:339712978800:table/questionIndex"]
+    "Resource": ["arn:aws:dynamodb:eu-north-1:339712978800:table/questionIndex","arn:aws:dynamodb:eu-north-1:339712978800:table/User-dnq2vqnyiffxfeewwwf253tad4-staging"]
   },
   {
     "Action": [

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { CircularProgress, Box, Typography } from '@mui/material';
 
-export default function CircularTimer({ duration, running, onTimerEnd, reset }) {
+export default function CircularTimer({ duration, running, onTimerEnd, reset, onTimeUpdate }) {
     const [progress, setProgress] = useState(100);
     const [timeLeft, setTimeLeft] = useState(duration);
     const timerRef = useRef(null);
@@ -33,12 +33,13 @@ export default function CircularTimer({ duration, running, onTimerEnd, reset }) 
 
     useEffect(() => {
         setProgress((timeLeft / duration) * 100);
+        onTimeUpdate(timeLeft); // Update the parent component every time timeLeft changes
 
         if (timeLeft === 0) {
             clearInterval(timerRef.current);
             onTimerEnd && onTimerEnd();
         }
-    }, [timeLeft, duration, onTimerEnd]);
+    }, [timeLeft, duration, onTimerEnd, onTimeUpdate]);
 
     return (
         <Box position="relative" display="inline-flex" alignItems="center" justifyContent="center">

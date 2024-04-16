@@ -39,6 +39,19 @@
           "delete"
         ]
       }
+    },
+    "/updateUserWeights": {
+      "name": "/updateUserWeights",
+      "lambdaFunction": "AdaptiLearn",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
     }
   }
 }
